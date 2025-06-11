@@ -1,8 +1,5 @@
 import streamlit as st
 
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
-
 st.title('Gerador de Luas')
 
 from sklearn import datasets
