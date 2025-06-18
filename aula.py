@@ -31,8 +31,7 @@ if pagina == 'Previsão de Sucesso em Tarefas':
     st.title('Previsão de Sucesso em Tarefas')
 
     # MELHORIA: Usar o cache do Streamlit para carregar o modelo apenas uma vez.
-    # Isso melhora drasticamente a performance do app.
-    @st.cache_resource
+    # Isso melhora drasticamente a performance do app. 
     def carregar_modelo_pycaret():
         return load_model('modelo_final')
 
