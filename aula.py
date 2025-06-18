@@ -29,8 +29,7 @@ if pagina == 'Calculadora de Calorias':
 if pagina == 'Previsão de Sucesso em Tarefas':
 
     st.title('Previsão de Sucesso em Tarefas')
-
-    # MELHORIA: Usar o cache do Streamlit para carregar o modelo apenas uma vez.
+ 
     # Isso melhora drasticamente a performance do app. 
     def carregar_modelo_pycaret():
         return load_model('modelo_final')
@@ -49,7 +48,7 @@ if pagina == 'Previsão de Sucesso em Tarefas':
     # Usando st.number_input para valores que podem ser digitados
     distractions = st.number_input('Número de distrações:', min_value=0, max_value=20, value=3, step=1)
     commits = st.number_input('Número de commits:', min_value=0, max_value=20, value=2, step=1)
-    bugs_reported = st.number_input('Bugs reportados:', min_value=0, max_value=10, value=1, step=1)
+    bugs_reported = st.number_input('Bugs reportados:', min_value=0, max_value=5, value=1, step=1)
 
     # --- Função de Previsão ---
     def prever_sucesso_tarefa(hours_coding, coffee_intake_mg, distractions, sleep_hours, commits, bugs_reported, ai_usage_hours, cognitive_load):
