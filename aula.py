@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from pycaret.classification import load_model, predict_model  
 
-pagina = st.sidebar.radio('Página:', ['Calculadora de Calorias', 'Previsão de Sucesso em Tarefas']
+pagina = st.sidebar.radio('Página:', ['Calculadora de Calorias', 'Previsão de Sucesso em Tarefas'])
 
 if pagina == 'Calculadora de Calorias':
     
