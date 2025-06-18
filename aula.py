@@ -23,7 +23,7 @@ if pagina == 'Calculadora de Calorias':
     st.metric(label = 'Caloria p/ Homem', value = caloria_homem)
     st.metric(label = 'Caloria p/ Mulher', value = caloria_mulher)
 
-    if pagina == 'Previsão de Sucesso em Tarefas':
+if pagina == 'Previsão de Sucesso em Tarefas':
     
     st.title('Deploy do Modelo para Classificação de Sucesso em Tarefas')
     
