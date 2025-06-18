@@ -1,6 +1,5 @@
 numpy
-pandas
-scikit-learn==1.2.2    
-dask==2023.7.1
-streamlit 
+pandas==1.5.3
+scikit-learn==1.2.2
+streamlit==1.45.0
 pycaret[full]==3.0.0
